@@ -1,0 +1,15 @@
+#remove_profile_pic,
+#remove_backpro_pic,
+#remove_logo_pic {
+    color: darkred;
+}
+#remove_profile_pic:hover,
+#remove_backpro_pic:hover,
+#remove_logo_pic:hover {
+    color: red;
+}
+#upload_profile_pic,
+#upload_backpro_pic,
+#upload_logo_pic {
+    color: darkgreen;;
+}

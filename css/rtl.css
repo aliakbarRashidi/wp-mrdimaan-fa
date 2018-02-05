@@ -1,0 +1,49 @@
+html {
+    direction: rtl;
+}
+
+.navbar-fixed nav .nav-wrapper {
+    direction: ltr;
+}
+
+.navbar-fixed nav .nav-wrapper ul {
+    margin-right: 12px;
+}
+
+.navbar-fixed nav .nav-wrapper ul li {
+    float: right;
+    direction: rtl;
+}
+
+.sidenav {
+    padding-right: 0;
+}
+
+.sidenav li a i.material-icons {
+    float: right;
+    margin: 0 0 0 28px;
+}
+
+.row .col {
+    float: right;
+}
+
+.carousel .indicators {
+    direction: ltr;
+}
+
+.input-field > label:not(.label-icon).active {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translate(15%, -20px) scale(0.85);
+        transform: translate(15%, -20px) scale(0.85);
+}
+
+.pagination {
+    direction: ltr;
+}
+
+.input-field.col label {
+    left: unset;
+    right: 0.75rem;
+}

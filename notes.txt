@@ -1,0 +1,23 @@
+wp_register_style( $handle, $src, $deps, $ver, $media );
+
+wp_register_script( $handle, $src, $deps = array(), $ver = false, $in_footer = false )
+
+
+
+learn
+1. copy index.html to index.php
+2. enqueue styles and scripts
+3. seperate header and footer
+4. create function-admin.php and include in functions.php
+5. in function-admin.php created function named dimaan_add_admin_page
+6. in that function use the add_menu_page hook to add a menu page to wordpress (can use ur icon or premade dash icon)
+7. and after dimaan_add_admin_page use follwing action hook to call the function
+
+add_action( 'admin_menu', 'dimaan_add_admin_page' );
+
+8. add submenu page using add_submenu_page function in dimaan_add_admin_page function
+9. in generation page function use follwing code to include the template:
+
+require get_template_directory() . '/inc/templates/admin/admin-footer-page.php';
+
+10. use add_action( 'admin_init', 'dimaan_custom_settings' ); in dimaan_add_admin_page function.
